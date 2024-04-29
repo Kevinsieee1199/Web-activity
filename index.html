@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Intro to Bootstrap</title>
+ </head>
+ <body>
+<div class="container-fluid p-5 bg-danger text-white text-center">
+  <h1>Husk</h1>
+  <p>Husk is a sinner demon, a grumpy gambler and magician who is a major character in Hazbin Hotel.</p>
+</div>
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/husk5.jpg" alt="husk5.jpg" class="d-block w-100" height="900" width="500">
+    </div>
+    <div class="carousel-item">
+      <img src="images/husk6.jpg" alt="husk6.jpg" class="d-block w-100" height="900" width="500">
+    </div>
+    <div class="carousel-item">
+      <img src="images/husk7.jpg" alt="husk7.jpg" class="d-block w-100" height="900" width="500">
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-3">
+      <h3>Grumpy</h3>
+      <p>About Husk 1</p>
+      <p>Husk is an anthropomorphic avian cat demon. His look is evocative of a magician, paired with a casino referencing playing card theme.</p>
+      <img src="images/husk1.jpg" class="rounded-circle" alt="husk1.jpg"height="120"width="130">
+      <hr>
+      </p>
+      <button>Click here</button>
+    </div>
+    <div class="col-sm-3">
+      <h3>Gambler</h3>
+      <p>About Husk 2</p>
+      <p>He has a darker shade of his fur encircling his ankles, mimicking cuffs on a set of pants. His tail is long and dark taupe-colored.</p>
+      <img src="images/husk2.jpg" class="rounded-circle" alt="husk2"height="120"width="130">
+      <hr>
+      </p>
+      <button>Click here</button>
+    </div>
+    <div class="col-sm-3">
+      <h3>Loser</h3>
+      <p>About Husk 3</p>
+      <p>Husk is a grumpy, lazy, and somewhat apathetic old sinner whose interests in Hell now lie mostly in gambling, parlor tricks, and prolific drinking.</p>
+      <img src="images/husk3.jpg" 
+      class="rounded-circle" 
+      alt="husk3.jpg"
+      height="120"
+      width="130"
+      />
+      <hr>
+      </p>
+      <button>Click here</button>
+    </div>
+    <div class="col-sm-3">
+      <h3>Alcoholic</h3>
+      <p>About Husk 4</p>
+      <p>Still a "husk" of his former self, he claims to have "lost the ability to love" long ago, though whether literally or metaphorically is yet unclear.</p>
+      <img src="images/husk4.jpg" 
+      class="rounded-circle" 
+      alt="husk4.jpg"
+      height="120"
+      width="130"
+      />
+      <hr>
+      </p>
+      <button>Click here</button>
+    </div>
+  </div>
+</div>
+ 
+<h1 id="works" class="text-center">MORE ABOUT HUSK</h1>
+<div class="container d-flex justify-content-center text-center" style="margin: 10; padding-left: 100px;">
+    <!-- first col start -->
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OLSWVCwy88g?si=6Sv87-hW_-ziecul"
+                    width="100%"></iframe>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Hazbin Hotel Trailer</h5>
+                <p class="card-text">Take a peek</p>
+                <div class="container mt-3">
+                    <h3>Click for More Picture</h3>
+                    <p>Click on the button to open the modal.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#myModal-1">
+                        Open modal
+                    </button>
+                </div>
+                <!-- The Modal -->
+                <div class="modal" id="myModal-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Modal Heading</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <img src="images/Husk 9.jpg"
+                                    class="card-img-top" alt="Husk 9.jpg">
+                                <!--Change the img -->
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- first col End -->
+    <!-- second col start -->
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nWuAzLwvKZs?si=zRYn2o2ir5aYoDkf"
+                    width="100%"></iframe>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">More About Husk</h5>
+                <p class="card-text">Not Just a Grumpy Demon</p>
+                <div class="container mt-3">
+                    <h3>Click for More Picture</h3>
+                    <p>Click on the button to open the modal.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#myModal-2">
+                        Open modal
+                    </button>
+                </div>
+                <!-- The Modal -->
+                <div class="modal" id="myModal-2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Modal Heading</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <img src="images/husk 10.jpg"
+                                    class="card-img-top" alt="husk 10.jpg">
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- second col end -->
+
+    <!-- third col start -->
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9sVoglgJjRg?si=F0DxQ8-tNOMvSOJJ"
+                    width="100%"></iframe>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">ALSO A SINGER</h5>
+                <p class="card-text">What a great VOICE!</p>
+                <div class="container mt-3">
+                    <h3>Click for More Picture</h3>
+                    <p>Click on the button to open the modal.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#myModal-3">
+                        Open modal
+                    </button>
+                </div>
+                <!-- The Modal -->
+                <div class="modal" id="myModal-3">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Modal Heading</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <img src="images/husk 12.jpg"
+                                    class="card-img-top" alt="husk 12.jpg">
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- Third col End -->
+
+<footer class="text-center bg-body-tertiary">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="https://www.facebook.com/hazbinhotelseries/"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="https://twitter.com/hazbinhotel?lang=en"
+        role="button"
+        data-mdb-ripple-color="dark"    
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="https://hazbinhotel.com/"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="https://www.instagram.com/hazbinhotel/?hl=en"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="https://www.linkedin.com/in/vivienne-medrano-7ba68094"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <!-- Github -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="https://github.com/"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2020 Copyright:
+    <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
